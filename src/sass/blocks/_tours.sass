@@ -1,0 +1,60 @@
+.tours
+  &__slider
+    &__item
+      border-radius: 12px
+      overflow: hidden
+    &__image
+      height: 270px
+      &-1
+        min-width: 425px
+      &-1 > img
+        position: relative
+        right: 15px
+      &-3
+        position: relative
+        top: 5px
+        height: 265px
+    &__image > img
+      height: 100%
+    &__banner
+      height: 535px
+      position: relative
+      top: 20px
+    &__banner > img
+      height: 100%
+    &__text
+      background-color: #f8f8f8
+      padding: 45px 40px 55px 75px
+    &__heading
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 18px
+    &__price > span
+      display: inline-block
+      font-size: 16px
+      color: #aeaeae
+      margin-right: 4px
+    &__price > strong
+      font-size: 22px
+      +bold
+    &__title
+      font-size: 16px
+      font-weight: normal
+      color: $diff-color
+      margin-top: 0
+      margin-bottom: 18px
+    &__location
+      display: flex
+      flex-wrap: wrap
+    &__location > span
+      display: block
+      margin-bottom: 18px
+      font-size: 16px
+      color: #aeaeae
+    &__info
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__info > span
+      font-size: 16px

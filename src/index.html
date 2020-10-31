@@ -7,12 +7,12 @@
   <title>Tours</title>
 </head>
 <body>
-  <div class="wraped">
+  <div class="wrapper">
     <header class="header">
       <div class="container">
         <div class="header-block">
           <div class="header__logo">
-            <img src="img/logo.png" alt="">
+            <img src="img/logo.png" alt="logo">
           </div>
          <div class="header__phone">
           <a href="tel:88007750220" class="header__phone__item">8 (800) 775 02 20</a>
@@ -24,25 +24,340 @@
         </div>
         <input type="text" placeholder="Поиск" class="header__search">
        </div>
+       <div class="header__navigation">
+        <ul class="header__navigation__list">
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">Главная</a></li>
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">О компании</a></li>
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">Вступить в cеть</a></li>
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">Вопросы и ответы</a></li>
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">Виды отдыха</a></li>
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">Для туриста</a></li>
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">Горячие советы</a></li>
+          <li class="header__navigation__item"><a href="#" class="header__navigation__link">Обучение в туризме</a></li>
+        </ul>
+       </div>
        <nav class="navigation">
-        <div class="navigation-block"></div>
-        <div class="navigation-block"></div>
+        <div class="navigation-block">
+          <div class="navigation__text">
+            <a href="#" class="navigation__text__item">Подбор тура</a>
+            <a href="#" class="navigation__text__item">Горящие туры</a>
+            <a href="#" class="navigation__text__item">Отели</a>
+            <a href="#" class="navigation__text__item">Новости туризма</a>
+            <a href="#" class="navigation__text__item">Страхование</a>
+            <a href="#" class="navigation__text__item">Агенствам</a>
+          </div>
+          <div class="navigation__button">
+            <button class="navigation__button__item">Хочу тур</button>
+            <button class="navigation__button__item">Контроль</button>
+          </div>
+        </div>
       </nav>
     </div>
     </header>
+    <main>
+      <section class="tours section">
+        <div class="container">
+          <h1 class="section__title tours__title">Горящие туры</h1>
+          <div class="tours__slider owl-carousel" id="tours-carousel">
+            <div class="tours__slider__item">
+              <div class="tours__slider__image tours__slider__image-1">
+                <img src="img/slide-img-1.png" alt="slide 1">
+              </div>
+              <div class="tours__slider__text">
+                <div class="tours__slider__heading">
+                  <div class="tours__slider__price"><span>от</span><strong>40 698$</strong></div>
+                  <div class="tours__slider__stars"><img src="img/tours-star-1.png" alt=""></div>
+                </div>
+                <h3 class="tours__slider__title">Taprobana Wadduwa by Asia Leisure</h3>
+                <div class="tours__slider__location">
+                  <span>Шри Ланка, Калутара</span>
+                  <span>Город вылета - Москва</span>
+                </div>
+                <div class="tours__slider__info">
+                  <span>12 ноября 2020</span>
+                  <span>7 ночей</span>
+                  <span>BB</span>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slider__item">
+              <div class="tours__slider__image">
+                <img src="img/slide-img-2.png" alt="slide 2">
+              </div>
+              <div class="tours__slider__text">
+                <div class="tours__slider__heading">
+                  <div class="tours__slider__price"><span>от</span><strong>7 749$</strong></div>
+                  <div class="tours__slider__stars"><img src="img/tours-star-2.png" alt=""></div>
+                </div>
+                <h3 class="tours__slider__title">Сочи парк отель бывш Azimut</h3>
+                <div class="tours__slider__location">
+                  <span>Россия, Сочи</span>
+                  <span>Город вылета - Москва</span>
+                </div>
+                <div class="tours__slider__info">
+                  <span>16 ноября 2020</span>
+                  <span>6 ночей</span>
+                  <span>НB</span>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slider__item">
+              <div class="tours__slider__image tours__slider__image-3">
+                <img src="img/slide-img-3.png" alt="slide 3">
+              </div>
+              <div class="tours__slider__text">
+                <div class="tours__slider__heading">
+                  <div class="tours__slider__price"><span>от</span><strong>26 346$</strong></div>
+                  <div class="tours__slider__stars"><img src="img/tours-star-3.png" alt=""></div>
+                </div>
+                <h3 class="tours__slider__title">Crown resorts Horizon</h3>
+                <div class="tours__slider__location">
+                  <span>Кипр, Пафос</span>
+                  <span>Город вылета - Москва</span>
+                </div>
+                <div class="tours__slider__info">
+                  <span>09 ноября 2020</span>
+                  <span>6 ночей</span>
+                  <span>НB</span>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slider__item">
+              <div class="tours__slider__banner">
+                <img src="img/slide-banner.png" alt="slide 4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offers section">
+        <div class="container">
+          <div class="offers-block">
+            <form action="#" class="choice">
+              <h2 class="section__title choice__title">Выберите сами!</h2>
+              <div class="choice-block">
+                <select name="city" class="choice__select">
+                  <option class="choice__select__item">Город вылета</option>
+                  <option value="mos" class="choice__select__item">Москва</option>
+                  <option value="pyt" class="choice__select__item">Питер</option>
+                  <option value="kaz" class="choice__select__item">Казань</option>
+                </select>
+                <select name="country" class="choice__select">
+                  <option class="choice__select__item">Страна, курорт или отель</option>
+                  <option value="ita" class="choice__select__item">Италия</option>
+                  <option value="bra" class="choice__select__item">Бразилия</option>
+                  <option value="kam" class="choice__select__item">Камбоджа</option>
+                </select>
+                <select name="date" class="choice__select">
+                  <option class="choice__select__item">Дата вылета</option>
+                  <option value="feb" class="choice__select__item">01.02</option>
+                  <option value="mar" class="choice__select__item">01.03</option>
+                  <option value="apr" class="choice__select__item">01.04</option>
+                  <option value="may" class="choice__select__item">01.05</option>
+                  <option value="jun" class="choice__select__item">01.06</option>
+                  <option value="jul" class="choice__select__item">01.07</option>
+                  <option value="aug" class="choice__select__item">01.08</option>
+                  <option value="sep" class="choice__select__item">01.09</option>
+                  <option value="oct" class="choice__select__item">01.10</option>
+                  <option value="nov" class="choice__select__item">01.11</option>
+                </select>
+                <select name="amount" class="choice__select">
+                  <option class="choice__select__item">Количество ночей</option>
+                  <option value="1-ni" class="choice__select__item">1 ночь</option>
+                  <option value="2-ni" class="choice__select__item">2 ночи</option>
+                  <option value="3-ni" class="choice__select__item">3 ночи</option>
+                  <option value="4-ni" class="choice__select__item">4 ночи</option>
+                  <option value="5-ni" class="choice__select__item">5 ночей</option>
+                  <option value="6-ni" class="choice__select__item">6 ночей</option>
+                </select>
+                <select name="people" class="choice__select">
+                  <option class="choice__select__item">Количество туристов</option>
+                  <option value="1-pe" class="choice__select__item">1 турист</option>
+                  <option value="2-pe" class="choice__select__item">2 туриста</option>
+                  <option value="3-pe" class="choice__select__item">3 туриста</option>
+                  <option value="4-pe" class="choice__select__item">4 туриста</option>
+                  <option value="5-pe" class="choice__select__item">5 туристов</option>
+                </select>
+                <div class="choice__submit">
+                  <button class="choice__button">Найти тур</button>
+                  <span class="choice__statistics">12 386 предложений доступно</span>
+                </div>
+              </form>
+            </div>
+            <div class="offers__slider">
+              <h2 class="section__title offers__title">Топ предложения</h2>
+              <div class="owl-carousel" id="offers-carousel">
+                <div class="offers__slider__item">
+                  <div class="offers__slider__image">
+                    <img src="img/offers-slide-1.png" alt="slide-1">
+                    <a href="#" class="offers__slider__text"><span>Подробнее</span><img src="img/offers-arrow.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="offers__slider__item">
+                  <div class="offers__slider__image">
+                    <img src="img/offers-slide-2.png" alt="slide-2">
+                    <a href="#" class="offers__slider__text offers__slider__text-2"><span>Подробнее</span><img src="img/offers-arrow.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="offers__slider__item">
+                  <div class="offers__slider__image">
+                    <img src="img/offers-slide-3.png" alt="slide-3">
+                    <a href="#" class="offers__slider__text"><span>Подробнее</span><img src="img/offers-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       <section class="advantage section">
+         <div class="container">
+           <h2 class="advantage__title section__title">Преимущества официальных турагенств</h2>
+           <div class="advantage-block">
+             <div class="advantage-block__item">
+               <div class="advantage-block__image"><img src="img/agvantage-image-1.png" alt="agvantage-1"></div>
+               <div class="advantage-block__text">
+                 <p>Мы сотрудничаем только с надежными партнёрами и туроператорами, которые гарантируют туристам качественный отдых</p>
+               </div>
+             </div>
+             <div class="advantage-block__item">
+               <div class="advantage-block__image"><img src="img/agvantage-image-2.png" alt="agvantage-2"></div>
+               <div class="advantage-block__text">
+                 <p>В агентствах сети «Горячие туры» и ТБГ работают опытные консультанты, которые подберут для вас оптимальный тур по
+                  выгодной цене</p>
+               </div>
+             </div>
+             <div class="advantage-block__item">
+               <div class="advantage-block__image"><img src="img/agvantage-image-3.png" alt="agvantage-3"></div>
+               <div class="advantage-block__text">
+                 <p>В офисах продаж нашей сети вы можете оплатить тур любым способом, а также оформить туры в кредит или в рассрочку</p>
+               </div>
+             </div>
+             <div class="advantage-block__item">
+               <div class="advantage-block__image"><img src="img/agvantage-image-4.png" alt="agvantage-4"></div>
+               <div class="advantage-block__text">
+                 <p>Офисы продаж находятся в более 200 городах России. Ежегодно в наших офисах бронируется более 500 тысяч туров</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       <section class="countries section"><!-- shadow -->
+         <div class="container">
+           <h2 class="countries__title section__title">Поиск туров по странам</h2>
+           <div class="countries-block">
+             <div class="countries-block__item">
+               <img src="img/countries-image-1.png" alt="country-1">
+               <div class="countries-block__text"><span>Турция</span>
+              </div>
+             </div>
+             <div class="countries-block__item">
+               <img src="img/countries-image-2.png" alt="country-2">
+               <div class="countries-block__text"><span>Таиланд</span>
+              </div>
+             </div>
+             <div class="countries-block__item">
+               <img src="img/countries-image-3.png" alt="country-3">
+               <div class="countries-block__text"><span>Абхазия</span>
+              </div>
+             </div>
+             <div class="countries-block__item">
+               <img src="img/countries-image-4.png" alt="country-4">
+               <div class="countries-block__text"><span>Австрия</span>
+              </div>
+             </div>
+             <div class="countries-block__item">
+               <img src="img/countries-image-5.png" alt="country-5">
+               <div class="countries-block__text"><span>Греция</span>
+              </div>
+             </div>
+             <div class="countries-block__item">
+               <img src="img/countries-image-6.png" alt="country-6">
+               <div class="countries-block__text"><span>Италия</span>
+              </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       <section class="info section">
+         <div class="container">
+           <div class="info-block">
+             <div class="advice">
+               <h2 class="section__title advice__title">Горячие советы</h2>
+               <div class="advice-block">
+                 <a href="#" class="advice-block__item">
+                   <div class="advice-block__image"><img src="img/advice-image-1.jpg" alt="advice-1"></div>
+                   <div class="advice-block__text"><span>Spice Hotel&SPA</span></div>
+                </a>
+                 <a href="#" class="advice-block__item">
+                   <div class="advice-block__image"><img src="img/advice-image-2.jpg" alt="advice-2"></div>
+                   <div class="advice-block__text"><span>One&Only Reethi Rah</span></div>
+                </a>
+                 <a href="#" class="advice-block__item">
+                   <div class="advice-block__image"><img src="img/advice-image-3.jpg" alt="advice-3"></div>
+                   <div class="advice-block__text"><span>One&Only The Palm</span></div>
+                </a>
+                 <a href="#" class="advice-block__item">
+                   <div class="advice-block__image"><img src="img/advice-image-4.jpg" alt="advice-4"></div>
+                   <div class="advice-block__text"><span>One&Only RoyaMirage, Dubai</span></div>
+                </a>
+                 <a href="#" class="advice-block__item">
+                   <div class="advice-block__image"><img src="img/advice-image-5.jpg" alt="advice-5"></div>
+                   <div class="advice-block__text"><span>Семейный отдых с Aldemar Resorts</span></div>
+                </a>
+                 <a href="#" class="advice-block__item">
+                   <div class="advice-block__image"><img src="img/advice-image-6.jpg" alt="advice-6"></div>
+                   <div class="advice-block__text"><span>Luxury&Thalasso Курорты Aldemar Resorts</span></div>
+                </a>
+                 <a href="#" class="advice-block__item">
+                   <div class="advice-block__image"><img src="img/advice-image-7.jpg" alt="advice-7"></div>
+                   <div class="advice-block__text"><span>Почему стоит провести отпуск на Кипре?</span></div>
+                </a>
+               </div>
+            </div>
+             <div class="news">
+               <h2 class="section__title news__title">Новости</h2>
+               <div class="news-block">
+                 <a href="#" class="news-block__item">
+                   <div class="news-block__image"><img src="img/news-image-1.png" alt="news-1"></div>
+                   <div class="news-block__text">
+                     <p>Международное авиасообщение будет восстановлено 1 августа</p>
+                   </div>
+                 </a>
+                 <a href="#" class="news-block__item">
+                   <div class="news-block__image"><img src="img/news-image-2.png" alt="news-2"></div>
+                   <div class="news-block__text">
+                     <p>Всего за 60 минут! Экспресс-тест на COVID-19 в Шереметьево</p>
+                   </div>
+                 </a>
+               </div>
+            </div>
+           </div>
+         </div>
+       </section>
+    </main>
   </div>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
+      $("#tours-carousel").owlCarousel({
         items: 3,
+        margin: 25,
         loop: true,
         nav: true,
         navText: [
           '<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="56.5px" height="56.5px"><defs><filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="56px" height="56px"  ><feOffset in="SourceAlpha" dx="-0.558" dy="7.981" /><feGaussianBlur result="blurOut" stdDeviation="4.243" /><feFlood flood-color="rgb(0, 0, 0)" result="floodOut" /><feComposite operator="atop" in="floodOut" in2="blurOut" /><feComponentTransfer><feFuncA type="linear" slope="0.1"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g filter="url(#Filter_0)"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)"d="M28.500,9.000 C34.299,9.000 39.000,13.701 39.000,19.500 C39.000,25.299 34.299,30.000 28.500,30.000 C22.701,30.000 18.000,25.299 18.000,19.500 C18.000,13.701 22.701,9.000 28.500,9.000 Z"/></g><path fill-rule="evenodd"  stroke="rgb(132, 132, 132)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"d="M29.219,23.999 L26.000,19.499 L29.219,15.000 "/></svg>',
           '<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="56.5px" height="56.5px"><defs><filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="56px" height="56px"  ><feOffset in="SourceAlpha" dx="-0.558" dy="7.981" /><feGaussianBlur result="blurOut" stdDeviation="4.243" /><feFlood flood-color="rgb(0, 0, 0)" result="floodOut" /><feComposite operator="atop" in="floodOut" in2="blurOut" /><feComponentTransfer><feFuncA type="linear" slope="0.1"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g filter="url(#Filter_0)"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)"d="M28.500,9.000 C34.299,9.000 39.000,13.701 39.000,19.500 C39.000,25.299 34.299,30.000 28.500,30.000 C22.701,30.000 18.000,25.299 18.000,19.500 C18.000,13.701 22.701,9.000 28.500,9.000 Z"/></g><path fill-rule="evenodd"  stroke="rgb(132, 132, 132)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"d="M27.781,23.999 L31.000,19.499 L27.781,15.000 "/></svg>'
         ]
+      });
+      $("#offers-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut'
       });
     });
     </script>

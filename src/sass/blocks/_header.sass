@@ -1,7 +1,9 @@
 .header
   padding-top: 43px
+  margin-bottom: 100px
   &-block
     margin-left: 75px
+    margin-bottom: 27px
     display: flex
     align-items: center
   &__logo
@@ -24,7 +26,7 @@
     width: 145px
     &__item
       font-size: 16px
-      color: rgb(208, 86, 155)
+      color: $diff-color
   &__search
     background: transparent
     width: 283px
@@ -37,3 +39,73 @@
     line-height: 2
     &::-webkit-input-placeholder
       color: #c4c4c4
+    &::-moz-placeholder
+      color: #c4c4c4
+    &:-ms-input-placeholder
+      color: #c4c4c4
+    &::-ms-input-placeholder
+      color: #c4c4c4
+    &::placeholder
+      color: #c4c4c4
+  &__navigation
+    margin-left: 75px
+    margin-bottom: 33px
+    &__list
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 1005px
+      margin: 0
+      padding: 0
+    &__item
+      list-style: none
+    &__link
+      font-size: 14px
+      color: rgb(0, 0, 0)
+.navigation
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__text
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-radius: 12px
+    background-color: rgb(230, 230, 230)
+    box-shadow: -0.558px 7.981px 18px 0px rgba(0, 0, 0, 0.1)
+    width: 70%
+    height: 76px
+    padding: 0px 75px
+    margin-right: 22px
+    &__item
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 16px
+      color: rgb(0, 0, 0)
+      padding: 0px 3px
+      &:hover
+        background: rgba(0, 0, 0, 0.15)
+  &__button
+    border-radius: 12px
+    background-color: rgb(255, 255, 255)
+    box-shadow: -0.558px 7.981px 18px 0px rgba(0, 0, 0, 0.1)
+    width: 28%
+    height: 76px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0px 87px
+    &__item
+      height: 100%
+      padding: 0px 3px
+      font-size: 16px
+      border: none
+      outline: none
+      background-color: #ffffff
+      color: $diff-color
+      cursor: pointer
+      &:hover
+        background-color: #f3efef

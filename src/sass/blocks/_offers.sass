@@ -1,0 +1,68 @@
+.offers
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__slider
+    width: 44%
+    &__image
+      position: relative
+    &__text
+      position: absolute
+      bottom: 55px
+      right: 75px
+      border-radius: 9px
+      background-color: rgba(192, 192, 192, 0.761)
+      width: 142px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      &-2
+        right: 125px
+      & > span
+        font-size: 16px
+        color: #ffffff
+        margin-right: 10px
+      & > img
+        max-width: 6px
+.choice
+  width: 44%
+  &-block
+    display: flex
+    flex-direction: column
+  &__select
+    border: none
+    outline: none
+    border-radius: 12px
+    box-shadow: -0.558px 7.981px 18px 0px rgba(0, 0, 0, 0.1)
+    height: 76px
+    margin-bottom: 22px
+    color: #a0a0a0
+    font-size: 16px
+    padding-left: 75px
+    appearance: none
+    background-image: url('../img/select-arrow.png')
+    background-repeat: no-repeat
+    background-position: 488px center
+    &:focus
+      background-image: url('../img/select-arrow-hover.png')
+  &__button
+    border-radius: 12px
+    background: rgb(255,228,0)
+    background: -moz-radial-gradient(circle, rgba(255,228,0,1) 0%, rgba(255,162,0,1) 100%)
+    background: -webkit-radial-gradient(circle, rgba(255,228,0,1) 0%, rgba(255,162,0,1) 100%)
+    background: radial-gradient(circle, rgba(255,228,0,1) 0%, rgba(255,162,0,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe400",endColorstr="#ffa200",GradientType=1)
+    box-shadow: -0.558px 7.981px 18px 0px rgba(0, 0, 0, 0.1)
+    width: 231px
+    height: 76px
+    font-size: 16px
+    border: none
+    outline: none
+    padding: 0
+    margin-right: 75px
+    cursor: pointer
+  &__statistics
+    color: #a0a0a0
+    font-size: 12px
