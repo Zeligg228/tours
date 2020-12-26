@@ -7,13 +7,12 @@
     &__item
       position: relative
       width: 32.6%
-      border-bottom-left-radius: 12px
       border-bottom-right-radius: 12px
       &::before
         content: ''
         display: block
-        width: 209px
-        height: 81px
+        width: 50.1%
+        height: 35.3%
         background-color: #ffffff
         position: absolute
         bottom: -1px
@@ -27,7 +26,35 @@
         height: 100%
     &__text
       position: absolute
-      bottom: 35px
-      left: 75px
+      bottom: 15%
+      left: 18%
       & > span
         font-size: 16px
+@media ( max-width: 1200px )
+  .countries
+    &-block
+      &__text
+        & > span
+          font-size: 14px
+@media ( max-width: 1000px )
+  .countries
+    &-block
+      &__item
+        width: 49%
+@media ( max-width: 700px )
+  .countries
+    &-block
+      &__item
+        width: 100%
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+      &__text
+        & > span
+          font-size: 16px
+@media ( max-width: 700px )
+  .countries
+    &-block
+      &__text
+        & > span
+          font-size: 14px

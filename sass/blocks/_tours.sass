@@ -1,19 +1,15 @@
 .tours
+  padding: 0px 15px
   &__slider
     &__item
       border-radius: 12px
       overflow: hidden
     &__image
-      height: 270px
-      &-1
-        min-width: 425px
-      &-1 > img
-        position: relative
-        right: 15px
+      max-height: 270px
       &-3
         position: relative
-        top: 5px
-        height: 265px
+        top: 7px
+        max-height: 265px
     &__image > img
       height: 100%
     &__banner
@@ -47,6 +43,7 @@
     &__location
       display: flex
       flex-wrap: wrap
+      flex-direction: column
     &__location > span
       display: block
       margin-bottom: 18px
@@ -58,3 +55,51 @@
       align-items: center
     &__info > span
       font-size: 16px
+@media ( max-width: 1500px )
+  .tours
+    &__slider
+      &__title
+        height: 36px
+@media ( max-width: 1200px )
+  .tours
+    &__slider
+      &__text
+        padding-left: 50px
+        padding-right: 10px
+@media ( max-width: 1150px )
+  .tours
+    &__slider
+      &__title
+        height: 25px
+      &__text
+        padding-right: 40px
+@media ( max-width: 768px )
+  .tours
+    &__slider
+      &__text
+        padding-right: 100px
+@media ( max-width: 470px )
+  .tours
+    &__slider
+      &__banner
+        max-height: 450px
+      &__price
+        & > span
+          font-size: 14px
+        & > strong
+          font-size: 18px
+      &__title
+        font-size: 14px
+      &__location
+        & > span
+          font-size: 14px
+      &__info
+        & > span
+          font-size: 14px
+      &__text
+        padding: 15px
+@media ( max-width: 370px )
+  .tours
+    &__slider
+      &__banner
+        max-height: 370px

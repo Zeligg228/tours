@@ -9,17 +9,18 @@
       position: relative
     &__text
       position: absolute
-      bottom: 55px
-      right: 75px
+      bottom: 12%
+      right: 14%
       border-radius: 9px
       background-color: rgba(192, 192, 192, 0.761)
-      width: 142px
-      height: 40px
+      width: 25%
+      min-width: 90px
+      height: 8%
       display: flex
       align-items: center
       justify-content: center
       &-2
-        right: 125px
+        right: 22%
       & > span
         font-size: 16px
         color: #ffffff
@@ -44,7 +45,7 @@
     appearance: none
     background-image: url('../img/select-arrow.png')
     background-repeat: no-repeat
-    background-position: 488px center
+    background-position: 86% center
     &:focus
       background-image: url('../img/select-arrow-hover.png')
   &__button
@@ -55,7 +56,7 @@
     background: radial-gradient(circle, rgba(255,228,0,1) 0%, rgba(255,162,0,1) 100%)
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe400",endColorstr="#ffa200",GradientType=1)
     box-shadow: -0.558px 7.981px 18px 0px rgba(0, 0, 0, 0.1)
-    width: 231px
+    width: 41%
     height: 76px
     font-size: 16px
     border: none
@@ -66,3 +67,82 @@
   &__statistics
     color: #a0a0a0
     font-size: 12px
+@media ( max-width: 1240px )
+  .choice
+    width: 50%
+    &__button
+      margin-right: 30px
+  .offers
+    &__slider
+      &__text
+        & > span
+          font-size: 14px
+@media ( max-width: 1000px )
+  .choice
+    &__select
+      height: 50px
+      font-size: 14px
+    &__button
+      height: 50px
+      font-size: 14px
+  .offers
+    &__title
+      margin-left: 45px
+    &__slider
+      &__text
+        padding: 5px
+        & > span
+          margin-right: 5px
+          font-size: 13px
+@media ( max-width: 870px )
+  .offers
+    &__title
+      margin-left: 35px
+    &__slider
+      &__text
+        & > span
+          font-size: 11px
+  .choice
+    &__submit
+      display: flex
+      align-items: center
+    &__button
+      margin-right: 10px
+@media ( max-width: 800px )
+  .offers
+    &-block
+      flex-direction: column
+    &__slider
+      width: 100%
+      &__text
+        padding: 0
+        & > span
+          font-size: 16px
+  .choice
+    &__button
+      width: 35%
+      margin-right: 30px
+  .choice
+    width: 100%
+    margin-bottom: 40px
+    &__select
+      padding-left: 35px
+@media ( max-width: 500px )
+  .offers
+    &__title
+      margin-left: 5px
+    &__slider
+      &__text
+        & > span
+          font-size: 13px
+  .choice
+    &__select
+      height: 30px
+      font-size: 12px
+    &__button
+      width: 100%
+      height: 40px
+      margin-right: 0
+      margin-bottom: 10px
+    &__submit
+      flex-wrap: wrap
