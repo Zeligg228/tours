@@ -776,16 +776,6 @@ a {
   color: black;
 }
 
-.header__list__icon {
-  display: none;
-  margin-left: 10px;
-}
-
-.icon__list {
-  width: 24px;
-  height: 24px;
-}
-
 .navigation-block {
   display: flex;
   align-items: center;
