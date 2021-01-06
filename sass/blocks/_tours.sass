@@ -6,10 +6,18 @@
       overflow: hidden
     &__image
       max-height: 270px
+      &-1
+        & > img
+          max-height: 270px
+      &-2
+        & > img
+          max-height: 270px
       &-3
         position: relative
         top: 7px
         max-height: 265px
+        & > img
+          max-height: 265px
     &__image > img
       height: 100%
     &__banner
@@ -26,6 +34,8 @@
       align-items: center
       justify-content: space-between
       margin-bottom: 18px
+    &__price
+      min-width: 120px
     &__price > span
       display: inline-block
       font-size: 16px
