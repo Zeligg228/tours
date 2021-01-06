@@ -27,6 +27,8 @@
         margin-right: 10px
       & > img
         max-width: 6px
+      &:hover
+        background: rgba(0, 0, 0, 0.8)
 .choice
   width: 44%
   &-block
@@ -64,6 +66,12 @@
     padding: 0
     margin-right: 75px
     cursor: pointer
+    &:hover
+      background: rgb(255,228,0)
+      background: -moz-radial-gradient(circle, rgba(255,228,0,1) 50%, rgba(255,162,0,1) 100%)
+      background: -webkit-radial-gradient(circle, rgba(255,228,0,1) 50%, rgba(255,162,0,1) 100%)
+      background: radial-gradient(circle, rgba(255,228,0,1) 50%, rgba(255,162,0,1) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe400",endColorstr="#ffa200",GradientType=1)
   &__statistics
     color: #a0a0a0
     font-size: 12px
