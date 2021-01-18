@@ -1,5 +1,7 @@
 *
   box-sizing: border-box
+html
+  scroll-behavior: smooth
 body
   font-family: "Gotham Pro Regular", sans-serif
   background-image: url('../img/bg.jpg')
@@ -53,11 +55,15 @@ a
     font-size: 30px
     margin-bottom: 35px
 @media ( max-width: 1150px )
+  .wrapper
+    border-radius: 40px
   .owl-carousel .owl-nav .owl-next
     right: -45px
   .owl-carousel .owl-nav .owl-prev
     left: -45px
 @media ( max-width: 800px )
+  .wrapper
+    border-radius: 20px
   body
     background-size: contain
     background-repeat: repeat-y
