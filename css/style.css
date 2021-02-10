@@ -1090,6 +1090,12 @@ a {
   .header__navigation {
     margin-left: 35px;
   }
+  .header__navigation__item::before {
+    display: none;
+  }
+  .navigation__text__item::before {
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
@@ -2152,6 +2158,11 @@ a {
 }
 
 @media (max-width: 400px) {
+  .footer-block {
+    background-image: none;
+    background: #ffe001;
+    background: linear-gradient(90deg, #ffe001 0%, #ffa601 100%);
+  }
   .footer-block__contacts__phone > a {
     display: block;
   }
